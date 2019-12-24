@@ -12,6 +12,16 @@ body{
     border-color: black;
 }
 
+.navbar p{
+    font-size: large;
+    margin-top: 15px;
+    margin-right: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 100px;
+}
+
 .nav-bar{
     background-color: transparent;
 }
@@ -43,6 +53,10 @@ body{
 }
 
 @media only screen and (max-width: 900px){
+    .navbar p{
+        margin-right: 0;
+    }
+
     .navbar{
         position: sticky;
         width: 100%;
