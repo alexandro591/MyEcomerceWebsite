@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*-----------------------------HOME------------------------------------*/
+.logo{
+    max-height: 40px;
+    background: rgb(0,0,0);
+    border-radius: 100%;
+    border-color: black;
+}
+
+.nav-bar{
+    background-color: rgba(206, 206, 206, 0.671);
+}
+
+.nav-link{
+    text-decoration: none !important;
+    color: inherit;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-link:hover{
+    color: inherit;
+    animation-name: zoom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.navbar-toggler{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes zoom{
+    from {}
+    to {transform: scale(1.2);}
+    
+}
+
+@media only screen and (max-width: 900px){
+    .navbar{
+        width: 100%;
+    }
+}
