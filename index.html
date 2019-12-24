@@ -64,7 +64,20 @@
 </html>
 
 <script>
-    $('.carousel').carousel({
-        interval: 2000
-    })
+    /*set carousel time to 2 seconds*/
+    try {
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    } catch (error) {
+        console.log(error);
+    }
+    /*hide navbar when click anywhere*/
+    try {
+        $(document).click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });    
+    } catch (error) {
+        console.log(error)
+    }
 </script>
