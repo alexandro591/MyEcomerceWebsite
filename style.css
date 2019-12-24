@@ -67,6 +67,16 @@ body{
     to {transform: scale(1.2);}
 }
 
+
+.carousel{
+    margin: auto;
+    width: 70%;
+}
+
+.information{
+    position: relative;
+}
+
 @media only screen and (max-width: 800px){
     .navbar p{
         margin-right: 0;
@@ -93,6 +103,9 @@ body{
         padding: 0;
     }
     .carousel{
-        position: fixed;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
