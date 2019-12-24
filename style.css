@@ -31,12 +31,18 @@ body{
 }
 
 .nav-bar{
-    background-color: transparent;
+    min-height: 80px;
+    max-height: 80px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    background: rgba(61, 28, 83, 0.753);
 }
 
 .nav-link{
     text-decoration: none !important;
-    color: inherit;
+    color: black;
+    font-weight: 500;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 20px;
@@ -52,6 +58,10 @@ body{
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
     box-shadow: none;
+}
+
+#home .mycarousel{
+    padding-top: 100px;
 }
 
 @keyframes zoominout{
@@ -88,15 +98,14 @@ body{
     }
 
     .navbar{
-        position: sticky;
         width: 100%;
 
     }
     .nav-link{
         font-size: medium;
+        color: white;
     }
     .navbar-collapse {
-        margin-top: 10px;
         margin-left: -16px;
         margin-right: -16px;
         margin-bottom: -10px;
@@ -112,4 +121,5 @@ body{
     .carousel img{
         border-radius: 0px;
     }
+    
 }
