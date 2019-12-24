@@ -18,7 +18,7 @@
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand"><img src="img/logo.png" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
-                    <i class="fa fa-bars"  style="color: black;"></i>
+                    <i class="fa fa-bars"  style="color: black;" onclick="clearSelection()"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -72,7 +72,7 @@
     } catch (error) {
         console.log(error);
     }
-    /*hide navbar when click anywhere*/
+    /*hide navbar when clicked anywhere*/
     try {
         $(document).click(function(){
             $('.navbar-collapse').collapse('hide');
@@ -80,4 +80,15 @@
     } catch (error) {
         console.log(error)
     }
+    function clearSelection(){
+        console.log("dfsdfsdf")
+        if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        }
+        else if (document.selection) {
+            document.selection.empty();
+        }
+    }
+
+
 </script>
