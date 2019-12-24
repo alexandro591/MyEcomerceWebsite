@@ -52,7 +52,7 @@ body{
     
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px){
     .navbar p{
         margin-right: 0;
     }
@@ -60,15 +60,24 @@ body{
     .navbar{
         position: sticky;
         width: 100%;
+
     }
     .nav-link{
         font-size: medium;
     }
     .navbar-collapse {
+        margin-top: 10px;
         margin-left: -16px;
         margin-right: -16px;
         margin-bottom: -10px;
         background-color: rgb(0, 0, 0) !important;
         color: white;
+    }
+    #home .container{
+        margin: 0;
+        padding: 0;
+    }
+    .carousel{
+        position: fixed;
     }
 }
