@@ -70,10 +70,15 @@ body{
 
 .carousel{
     margin: auto;
-    width: 70%;
+    width: 90vw;
+}
+
+.carousel img{
+    border-radius: 20px;
 }
 
 .information{
+    top: 30px;
     position: relative;
 }
 
