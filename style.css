@@ -102,7 +102,7 @@ body{
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 991px){
     .navbar p{
         margin-right: 0;
     }
