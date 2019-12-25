@@ -65,7 +65,7 @@ body{
 }
 
 #home .mycarousel{
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 @keyframes zoominout{
@@ -84,7 +84,7 @@ body{
 
 .carousel{
     margin: auto;
-    width: 90vw;
+    width: 80vw;
 }
 
 .carousel img{
