@@ -19,7 +19,7 @@
                 <a class="navbar-brand"><img src="img/logo.png" alt="" class="logo"></a>
                 <p>LocalHost</p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
-                    <i class="fa fa-bars"  style="color: black;" onclick="clearSelection()"></i>
+                    <i class="fa fa-bars"  style="color: black;" onclick=""></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -63,9 +63,9 @@
             </div>
         </div>
         <div class="phonediv">
-            <img src="img/1.png" alt="">
-            <img src="img/2.png" alt="">
-            <img src="img/3.png" alt="">         
+            <img id="div1" src="img/1.png" alt="">
+            <img id="div2" src="img/2.png" alt="">
+            <img id="div3" src="img/3.png" alt="">         
         </div>
         <div class="information">
             <div class="container text-center">
@@ -108,7 +108,6 @@
         console.log(error)
     }
     function clearSelection(){
-        console.log("dfsdfsdf")
         if (window.getSelection) {
             window.getSelection().removeAllRanges();
         }
@@ -116,6 +115,5 @@
             document.selection.empty();
         }
     }
-
 
 </script>
