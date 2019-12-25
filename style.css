@@ -108,7 +108,7 @@ body{
 .information{
     z-index: 0;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(253,85,29,0.16850490196078427) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(188,253,29,0.12088585434173671) 50%, rgba(255,255,255,1) 100%);
     padding-top: 115px;
     margin-top: -115px;
     font-size: 13px;
