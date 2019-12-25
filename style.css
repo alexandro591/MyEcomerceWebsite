@@ -133,14 +133,17 @@ body{
     .phonediv{
         visibility: visible;
         position: relative;
-        max-width: 100vw;
+        max-width: 90vw;
+        margin: auto;
         padding-top: 80px;
     }
     #home .mycarousel{
         padding-top: 0;
     }
     .phonediv img{
-        width: 100vw;
+        margin-top: 10px;
+        text-align: center;
+        width: 90vw;
         animation-name: zoominoutimg;
         animation-duration: 1s;
         animation-iteration-count: infinite; 
