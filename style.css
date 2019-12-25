@@ -99,6 +99,8 @@ body{
 }
 
 .information{
+    padding-top: 115px;
+    margin-top: -115px;
     font-size: 13px;
     top: 30px;
     position: relative;
