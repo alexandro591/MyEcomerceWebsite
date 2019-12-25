@@ -105,6 +105,16 @@ body{
 
 }
 
+.stitle{
+    text-align: center;
+    font-weight: 100;
+    font-size: larger;
+}
+.informationimg{
+    width: 60%;
+    margin: auto;
+}
+
 
 @media only screen and (max-width: 991px){
     .navbar p{
