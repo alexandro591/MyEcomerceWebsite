@@ -99,6 +99,7 @@ body{
 }
 
 .information{
+    font-size: 13px;
     top: 30px;
     position: relative;
 }
@@ -110,7 +111,7 @@ body{
 }
 
 .stitle{
-    text-align: center;
+    text-align: left;
     font-weight: 200;
     font-size: x-large;
     text-shadow: .5px .5px 1px #000000;
