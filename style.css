@@ -55,13 +55,14 @@ body{
     animation-fill-mode: forwards;
 }
 
+
 .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
     box-shadow: none;
 }
 
 #home .mycarousel{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 @keyframes zoominout{
@@ -92,6 +93,11 @@ body{
     position: relative;
 }
 
+.phonediv{
+    visibility: hidden;
+    position: fixed;
+}
+
 @media only screen and (max-width: 800px){
     .navbar p{
         margin-right: 0;
@@ -113,13 +119,23 @@ body{
         color: white;
     }
     .carousel{
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        position: relative;
+        visibility: hidden;
+        position: fixed;
     }
     .carousel img{
         border-radius: 0px;
+    }
+    .phonediv{
+        visibility: visible;
+        position: relative;
+        max-width: 100vw;
+        padding-top: 80px;
+    }
+    #home .mycarousel{
+        padding-top: 0;
+    }
+    .phonediv img{
+        width: 100vw;
     }
     
 }
