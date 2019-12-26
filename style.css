@@ -164,6 +164,17 @@ body{
 
 @media only screen and (max-width: 991px){
 
+    .stext{
+        height: auto;
+    }
+    .informationimg{
+        height: auto;
+        width: 100%;
+    }
+    .stitle{
+        height: auto;
+    }
+
     .information{
         padding-top: 115px;
         margin-top: -115px;
