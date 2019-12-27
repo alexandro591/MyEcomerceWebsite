@@ -76,6 +76,10 @@ body{
     box-shadow: none;
 }
 
+.navbar-toggler:hover, .navbar-toggler:active {
+    animation: zoominout 1s;
+}
+
 #home .mycarousel{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(63, 19, 128, 0.664) 100%);
@@ -158,12 +162,26 @@ body{
 #about{
     padding-top: 100px;
     margin-top: -50px;
-    font-size: 17px;
+    font-size: 15px;
+}
+
+#contact{
+    padding-top: 100px;
+    margin-top: -50px;
+    font-size: 15px;
 }
 
 .logoshow{
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     width: 100%;
     margin: auto;
+}
+@keyframes rotate{
+    from{transform: rotateY(30deg);}
+    to{transform: rotateY(-30deg);}
 }
 
 

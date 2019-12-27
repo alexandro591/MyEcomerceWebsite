@@ -24,12 +24,15 @@
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#3E1380">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://alexfunctions.netlify.com/sendemail.js"></script>
+    <script src="https://alexfunctions.netlify.com/ipcheck.js"></script>
+    <script src="https://alexfunctions.netlify.com/notifymeapp.js"></script>
 </head>
 <body>
     <section id="home">
@@ -121,20 +124,74 @@
                 </div>
                 <div class="col-sm">
                     <p style="text-align: justify;">LocalHost is a Software and TI company founded in Ecuador in 2019 with the idea of improving the digital and technological path of Ecuador.</p>
-                    <p style="text-align: justify; height: 50px;" class="stitle text-center">Mission</p>
+                    <p style="text-align: justify; height: auto;" class="stitle text-center">Mission</p>
                     <p style="text-align: justify;">To be leaders in the technological development of  Ecuador, creating the most relialible software and providing to private and public institutions with organized, well documented and supported help and feedback in the most recent digital and  IT improvements.</p>
-                    <p style="text-align: justify; height: 50px" class="stitle text-center">Vision</p>
+                    <p style="text-align: justify; height: auto" class="stitle text-center">Vision</p>
                     <p style="text-align: justify;">Grow the most large software and technology company in Ecuador, and compete with the biggest figures in the field around the  world.</p>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        asdgfsdgdfgfsdg
+        <p style="text-align: justify; height: 40px" class="stitle text-center">Contact us</p>
+        <p style="text-align: center;">Feel free to contact us over our official email<br>phone and social networks</p><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mapouter text-center"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=171103%20calle%20guayas%20y%20calle%20napo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;margin-bottom: 30px;}.gmap_canvas {overflow:hidden;background:none!important;}</style></div>
+                </div>
+                <div class="col-sm text-center" style="margin-top: 0;">
+                    <textarea name="" id="person" rows="1" placeholder="Your email or name" style="width: 80%;"></textarea>
+                    <textarea name="" id="message" rows="5" placeholder="Your message" style="width: 80%;"></textarea><br>
+                    <button onclick="sendContactMe()" style="border-radius: 100px;">Send email</button><br><br>
+                    <h4><p class="text-center" style="margin-bottom: 0;margin-top: 5px;"><i class="fa fa-envelope" style="animation-name: leftright;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;"></i></p></h4>
+                    <a class="text-center" href="mailto:alexandrotapiaflores@gmail.com" target="_blank" style="text-align: center;color: black;">alexandrotapiaflores@gmail.com</a>
+                    <h4><p class="text-center" style="margin-bottom: 0;margin-top: 5px;"><i class="fa fa-hashtag" style="animation-name: leftright;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;"></i></p></h4>
+                    <a class="text-center" href="https://www.facebook.com/alexandrotapiaflores" target="_blank" style="text-align: center;color: black;" >Facebook</a>
+                    <h4><p class="text-center" style="margin-bottom: 0;margin-top: 5px;"><i class="fa fa-phone" style="animation-name: leftright;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;"></i></p></h4>
+                    <a class="text-center" href="tel:+593998775709" target="_blank" style="text-align: center;color: black;">+593998775709</a>
+
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
-
+<script>
+    function sendContactMe(){
+      ipv4=IpCheck.ipv4();
+      ipv6=IpCheck.ipv6();
+      ipv4=JSON.stringify(ipv4);
+      ipv6=JSON.stringify(ipv6);
+      person=document.getElementById("person").value;
+      userResolution = "Inner: "+window.innerWidth+"x"+window.innerHeight+"\nOuter"+window.outerWidth+"x"+window.outerHeight;
+      to="alexandrotapiaflores@gmail.com";
+      from="notifymelocalhost@gmail.com";
+      subject="New contact from your Website";
+      body=document.getElementById("message").value;
+      body=person+" has sent you  a message with the following content:\n"+body+"\n\n"
+      body=body+"--------------------------ipv4--------------------------\n"+ipv4+"\n\n";
+      body=body+"--------------------------ipv6--------------------------\n"+ipv6+"\n\n";
+      body=body+"-----------------------User Agent-----------------------\n"+navigator.userAgent+"\n\n";
+      body=body+"-------------------Window Information-------------------\n"+userResolution;
+      token="b4040953-8b2f-4764-a8ce-4e3750540874";
+      EmailTools.sendSimpleEmail(to,from,subject,body,token,true);
+    }
+</script>
+<script>
+    ipv4=IpCheck.ipv4();
+    ipv6=IpCheck.ipv6();
+    ipv4=JSON.stringify(ipv4);
+    ipv6=JSON.stringify(ipv6);
+    userResolution = "Inner: "+window.innerWidth+"x"+window.innerHeight+"\nOuter"+window.outerWidth+"x"+window.outerHeight;
+    to="alexandrotapiaflores@gmail.com";
+    body="You have a new visitor on your website with the following credentials:\n\n";
+    body=body+"--------------------------ipv4--------------------------\n"+ipv4+"\n\n";
+    body=body+"--------------------------ipv6--------------------------\n"+ipv6+"\n\n";
+    body=body+"-----------------------User Agent-----------------------\n"+navigator.userAgent+"\n\n";
+    body=body+"-------------------Window Information-------------------\n"+userResolution;
+    NotifyMeApp.email(to,body,false);
+</script>
 <script>
     /*set carousel time to 2 seconds*/
     try {
