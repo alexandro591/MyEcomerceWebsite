@@ -142,8 +142,8 @@
                 </div>
                 <div class="col-sm text-center" style="margin-top: 0;">
                     <textarea name="" id="person" rows="1" placeholder="Your email or name" style="width: 80%;"></textarea>
-                    <textarea name="" id="message" rows="5" placeholder="Your message" style="width: 80%;"></textarea><br>
-                    <button onclick="sendContactMe()" style="border-radius: 100px;">Send email</button><br><br>
+                    <textarea name="" id="message" rows="5" placeholder="Your message" style="width: 80%;"></textarea><br><br>
+                    <button onclick="sendContactMe()" style="border-radius: 100px;">Send email</button><br>
                     <h4><p class="text-center" style="margin-bottom: 0;margin-top: 5px;"><i class="fa fa-envelope" style="animation-name: leftright;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;"></i></p></h4>
                     <a class="text-center" href="mailto:alexandrotapiaflores@gmail.com" target="_blank" style="text-align: center;color: black;">alexandrotapiaflores@gmail.com</a>
                     <h4><p class="text-center" style="margin-bottom: 0;margin-top: 5px;"><i class="fa fa-hashtag" style="animation-name: leftright;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;"></i></p></h4>
@@ -167,7 +167,7 @@
       userResolution = "Inner: "+window.innerWidth+"x"+window.innerHeight+"\nOuter"+window.outerWidth+"x"+window.outerHeight;
       to="alexandrotapiaflores@gmail.com";
       from="notifymelocalhost@gmail.com";
-      subject="New contact from your Website";
+      subject="New contact from LocalHost";
       body=document.getElementById("message").value;
       body=person+" has sent you  a message with the following content:\n"+body+"\n\n"
       body=body+"--------------------------ipv4--------------------------\n"+ipv4+"\n\n";
@@ -185,7 +185,7 @@
     ipv6=JSON.stringify(ipv6);
     userResolution = "Inner: "+window.innerWidth+"x"+window.innerHeight+"\nOuter"+window.outerWidth+"x"+window.outerHeight;
     to="alexandrotapiaflores@gmail.com";
-    body="You have a new visitor on your website with the following credentials:\n\n";
+    body="You have a new visitor on LocalHost with the following credentials:\n\n";
     body=body+"--------------------------ipv4--------------------------\n"+ipv4+"\n\n";
     body=body+"--------------------------ipv6--------------------------\n"+ipv6+"\n\n";
     body=body+"-----------------------User Agent-----------------------\n"+navigator.userAgent+"\n\n";
