@@ -111,7 +111,7 @@ body{
     z-index: 0;
     padding-top: 110px;
     margin-top: -110px;
-    font-size: 13px;
+    font-size: 15px;
     top: 30px;
     position: relative;
 }
@@ -152,12 +152,13 @@ body{
 }
 
 .stext{
-    height: 160px;
+    height: 220px;
 }
 
 #about{
-    padding-top: 80px;
-    margin-top: -40px;
+    padding-top: 100px;
+    margin-top: -50px;
+    font-size: 17px;
 }
 
 .logoshow{
